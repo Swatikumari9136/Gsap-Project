@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+          <link rel="stylesheet" href="/Youtube/style.css">
+          <title>Youtube</title>
+</head>
+<body>
+          <div class="main">
+                    <div class="center">
+                              <!-- <i class="ri-menu-fold-fill"></i> -->
+                              <div id="text">
+                                        <div id="text1">
+                                                  <h1>Sahara</h1>
+                                                  <br>
+                                                  <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, blanditiis quas. Veniam dolore hic doloribus ex voluptates ducimus sint, earum, vero, molestias accusantium pariatur maxime similique quibusdam .</h5>
+                                                  <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, expedita.</h6>
+                                        </div>
+                                        <div id="text1">
+                                                  <h1>Jara</h1>
+                                                  <br>
+                                                  <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, blanditiis quas. Veniam dolore hic doloribus ex voluptates ducimus sint, earum, vero, molestias accusantium pariatur maxime similique quibusdam .</h5>
+                                                  <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, expedita.</h6>
+                                        </div>
+                                        <div id="text1">
+                                                  <h1>Violet</h1><br>
+                                                  <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, blanditiis quas. Veniam dolore hic doloribus ex voluptates ducimus sint, earum, vero, molestias accusantium pariatur maxime similique quibusdam .</h5>
+                                                  <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, expedita.</h6>
+                                        </div>
+                              </div>
+
+                              <div id="one" class="imgcontainer">
+                                        <img src="/Youtube/rafaella-mendes-diniz-et_78QkMMQs-unsplash-removebg-preview.png" alt="">
+                              </div>
+                              <div id="two" class="imgcontainer">
+                                        <img src="/Youtube/andreea-chidu-FPV2_FbNHoE-unsplash-removebg-preview.png" alt="">
+                              </div>
+                              <div id="three" class="imgcontainer">
+                                        <img src="/Youtube/yasu-shots-_y6hMz1pJC0-unsplash-removebg-preview.png" alt="">
+                              </div>
+
+                              <div class="left">
+                                        <div id="top">
+                                                  <h1>F</h1>
+                                                  <h4>i</h4>
+                                        </div>
+                                        <div id="hr"></div>
+                                        <div id="bottom">
+                                                  <p> MORE</p>
+                                                  <i class="ri-arrow-right-line"></i>
+                                        </div>              
+                              </div>
+
+                    </div>
+          </div>
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+          <script>
+                   var tl = gsap.timeline({
+                    repeat:-1
+                   });
+                    tl.to(".imgcontainer",{                    
+                              width: "100%",
+                              ease: Expo.easeeInOut,
+                              duration:2,
+                              stagger:2
+                    },'a')
+                    .to("#text h1",{
+                              ease: Expo.easeeInOut,
+                              stagger:2,
+                              top:0
+                    },'a')
+                    .to("#text h1",{
+                              delay:2,
+                              ease: Expo.easeeInOut,
+                              stagger:2,
+                              duration:2,
+                              top:"-100%"
+                    },'a')
+                    .to("#text h5",{
+                              ease: Expo.easeeInOut,
+                              stagger:2,
+                              top:100
+                    },'a')
+                    .to("#text h5",{
+                              delay:2,
+                              ease: Expo.easeeInOut,
+                              stagger:2,
+                              top:"-200%"
+                    },'a')
+                    .to("#text h6",{
+                              ease: Expo.easeeInOut,
+                              stagger:2,
+                              top:0
+                    },'a')
+                    .to("#text h6",{
+                              delay:2,
+                              ease: Expo.easeeInOut,
+                              stagger:2,
+                              top:"100%"
+                    },'a')
+                          
+          </script>
+          
+</body>
+</html>
